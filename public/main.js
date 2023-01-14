@@ -1,6 +1,6 @@
 'use strict';
 (()=>{
-	const ws = new WebSocket('ws://192.168.1.155:40510'),
+	const ws = new WebSocket('ws://192.168.xxx.xxx:40510'),
 	inputPseudo = document.getElementById('inputPseudo'),
 	textaera = document.getElementById('pseudos_list'),
 	validBtn = document.getElementById('validBtn'),
