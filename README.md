@@ -5,11 +5,10 @@ Pour exécuter / installer le programme, vous aurez besoin de :
 NodeJS avec NPM installé.
 
 #### Téléchargement des dépendances
-Après avoir cloné le code source depuis Github, vous devez exécuter la commande suivante pour télécharger toutes les dépendances (ws, express, etc.) :
+Après avoir cloné le code source depuis Github, vous devez exécuter la commande suivante (DEPUIS LE DOSSIER DU PROJET CLONÉ) pour télécharger toutes les dépendances (ws, express, etc.) :
 ```
 npm install axios express generic-pool ws
 ```
-
 ```
 npm install nodemon --save-dev
 ```
