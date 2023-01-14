@@ -17,8 +17,6 @@ const coniunctio = ''
 const factory = {
 	create: () => {
 		return axios.create({
-			//baseURL:url,
-			//timeout: 1000,
 			headers: {'Cookie': 'coniunctio='+coniunctio}
 		});
 	},
@@ -33,12 +31,10 @@ const factory = {
 		});
 	}*/
 };
-
 const opts = {
 	max: 50,
 	min: 1
 };
-
 const api_pool = pool.createPool(factory, opts);
 
 server.on('connection', (ws, req) => {
@@ -48,18 +44,7 @@ server.on('connection', (ws, req) => {
 		const pseudos_pas_ban = [];	
 		let pseudos_recu = []
 
-		/*
-		si on ne reçois qu'un seul pseudo on le met dans un tableau pour qu'il soit traité comme un tableau
-		*/
-		/*if (typeof(pseudos) === 'string'){
-			pseudos_recu.push(pseudos);
-		}
-		else {
-			pseudos_recu = pseudos; 
-			console.log(pseudos);
-		}
-*/
-		
+		//si on ne reçois qu'un seul pseudo on le met dans un tableau pour qu'il soit traité comme un tableau		
 		pseudos_recu = typeof(pseudos) === 'string' ? [pseudos] : pseudos;
 		for (let i = 0; i < pseudos_recu.length; i++) {
 			if (!pseudos_recu[i].match(/^[a-zA-Z0-9\-_\[\]]{3,15}$/)) {
@@ -69,8 +54,7 @@ server.on('connection', (ws, req) => {
 			else {
 
 			}
-		}
-		
+		}		
 		console.log('contenu reçu :');
 		console.log(pseudos_recu) //liste des pseudos reçus
 		
