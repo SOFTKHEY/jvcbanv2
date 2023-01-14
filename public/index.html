@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Jvc Ban pseudo</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
+
+	<link rel='stylesheet' href='style.css'>
+
+
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+	<meta name='description' content='Testez un ou plusieurs de vos pseudos sont bannis des forums de jvc.'>
+</head>
+<body>
+	<h1></h1>
+	<header>
+	</header>
+	<div id='presentation'>
+		<h1>Testez si un ou plusieurs de vos pseudos sont bannis des forums de jvc.</h1>
+	</div>
+	<div>
+		<label for='inputPseudo'>Tester les pseudos commençant par pseudo</label><br>
+		<input type='text' name='pseudo_sample' id='inputPseudo' size='16' placeholder='pseudo' autofocus>
+		<button id='validBtn'>Valider</button><br>
+		<div id='error_message'></div>
+	</div>
+
+	<div>OU</div>
+
+	<label for='pseudos_list'>Tester une liste de pseudos différents</label><br>
+	<div id='conteneur'>	
+		<div id='form'>	
+			<textarea id='pseudos_list' rows='20' cols='20' placeholder='usufruit&#10;Paznonobstant&#10;Arretezdemeban&#10;lesmodos'></textarea><br><br>
+			<button id='valid1Btn'>Valider</button><br>
+			<!--<button id='saveList' disabled>Sauvegarder la liste</button><br>
+			<button id='emptyList' disabled>Vider la liste</button>-->
+		</div>
+		<div id='resultat'></div>
+	</div>
+	<footer>
+		<p>contact <a href='#'>ent</a></p>
+		<p>Aucune donnée n'est conservée, le code source du site est dispo ici : <a href="#">lien github</a><br>
+			Il est également dispo dans la console du navigateur, le code n'étant pas obfusqué (et oui le shills).
+		</p>
+		<!-- <div>mode nuit ON/OFF</div>
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+
+		</label> -->
+
+	</footer>
+	<script src='main.js'></script>
+</body>
+</html>
