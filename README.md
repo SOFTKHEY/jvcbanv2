@@ -27,6 +27,6 @@ Après avoir téléchargé toutes les dépendances et modifier les lignes du coo
 ```
 npm run dev
 ```
-![screenshot_projet]([http://image.noelshack.com/fichiers/2018/51/2/1545147553-screenshot-2.png](https://image.noelshack.com/fichiers/2023/02/6/1673704923-ppppp.png))
+![screenshot_projet](https://image.noelshack.com/fichiers/2023/02/6/1673704923-ppppp.png)
 
 Ouvrez votre navigateur et allez sur `http://localhost:8080` pour lancer ce foutu vérificateur de pseudo ban.
